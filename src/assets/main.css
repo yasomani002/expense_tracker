@@ -13,10 +13,11 @@
   padding: 2rem;
   box-sizing: border-box;
   background-color: #ffffff;
+  box-shadow: #696c80 6px 6px 7px;
 }
 
 body {
-  background-color: #c4baba;
+  background-color: #BCCCF8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +112,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #534988;
+  background-color: #244da0;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
