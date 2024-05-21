@@ -26,11 +26,7 @@ onMounted(() => {
   }
 })
 
-const transactionData = ref([
-  { id: 1, text: 'EMI', amount: -200 },
-  { id: 2, text: 'Rent', amount: -50 },
-  { id: 3, text: 'Salary', amount: 600 }
-])
+const transactionData = ref([])
 
 // get total
 const total = computed(() => {
@@ -63,7 +59,7 @@ const handleTransactionSubmitted = (transaction) => {
     text: transaction.text,
     amount: transaction.amount
   }),
-  saveToLocalStorage()
+    saveToLocalStorage()
 }
 
 // get id
@@ -81,6 +77,6 @@ const handleTransactionDeletted = (id) => {
 
 // save to local storage
 const saveToLocalStorage = () => {
-  localStorage.setItem('transactions' , JSON.stringify(transactionData.value))
+  localStorage.setItem('transactions', JSON.stringify(transactionData.value))
 }
 </script>
