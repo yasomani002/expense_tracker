@@ -8,8 +8,15 @@
   box-sizing: border-box;
 }
 
+.root{
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
 body {
-  background-color: #f7f7f7;
+  background-color: #c4baba;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,11 +28,17 @@ body {
 }
 
 .container {
-  margin: 30px auto;
+  margin: 30px 0 0;
   width: 400px;
 }
-
+.header{
+  margin-top: 0;
+}
 @media only screen and (max-width: 600px) {
+  .root{
+    margin: 1rem 0;
+    padding: 2rem;
+  }
   .container {
     width: 280px;
   }
@@ -54,6 +67,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 1rem;
 }
 
 .inc-exp-container > div {
@@ -92,17 +106,19 @@ input[type='number'] {
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #534988;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: block;
   font-size: 16px;
-  margin: 10px 0 30px;
+  margin: 10px 0 0px;
+  border-radius: 0.5rem;
   padding: 10px;
   width: 100%;
 }

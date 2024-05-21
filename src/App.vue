@@ -1,12 +1,13 @@
 <template>
-  <Header />
-  <div class="container">
-    <Balance :total="total" />
-    <IncomeExpensess :income="+income" :expense="+expense" />
-    <TransactionHistory :transactionData="transactionData" @transactionDeletted="handleTransactionDeletted" />
-    <AddTransaction @transactionSubmitted="handleTransactionSubmitted" />
+  <div class="root">
+    <Header />
+    <div class="container">
+      <Balance :total="total" />
+      <IncomeExpensess :income="+income" :expense="+expense" />
+      <TransactionHistory :transactionData="transactionData" @transactionDeletted="handleTransactionDeletted" />
+      <AddTransaction @transactionSubmitted="handleTransactionSubmitted" />
+    </div>
   </div>
-
 
 </template>
 
